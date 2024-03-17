@@ -12,7 +12,7 @@ Link to Figman for preview of proposal : ![https://www.figma.com/file/d4NHfqmfPa
 
 **Results View**
 
-Link to Figman for preview of proposal : ![Main Page.png](https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
+Link to Figman for preview of proposal : ![https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
 
 ## User Stories
 

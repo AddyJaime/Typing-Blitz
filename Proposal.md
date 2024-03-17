@@ -8,11 +8,11 @@ Typing Blitz is a game that test how fast a person can write, you will have 45 s
 
 **Initial Landing View**
 
-![https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
+Link to Figman for preview of proposal : ![https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
 
 **Results View**
 
-![Main Page.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f90f807-75f8-4ef1-8a99-3ff173dc9d4d/f7f7fc1a-c1e3-445f-bddf-ce194d133788/Main_Page.png)
+Link to Figman for preview of proposal : ![Main Page.png](https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
 
 ## User Stories
 

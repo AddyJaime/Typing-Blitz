@@ -8,7 +8,7 @@ Typing Blitz is a game that test how fast a person can write, you will have 45 s
 
 **Initial Landing View**
 
-![Screenshot 2024-03-16 at 11.57.36 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f90f807-75f8-4ef1-8a99-3ff173dc9d4d/1d072306-497e-4590-b77c-1d181cc35401/Screenshot_2024-03-16_at_11.57.36_PM.png)
+![https://www.figma.com/file/d4NHfqmfPaqeh9CzCfYGVj/Typing-Blitz?type=design&node-id=0%3A1&mode=design&t=1OqsBLvAoSQr8J1Y-1)
 
 **Results View**
 

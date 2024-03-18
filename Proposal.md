@@ -14,19 +14,17 @@ Link to Figman for layout of proposal : ![https://www.figma.com/file/d4NHfqmfPaq
 
 ### MVP Goals
 
-- As a player, I would like to see paragraphs that motivate me to continue playing.
-- As a player, I would like the timing to be less strict that way i can have more time to complete more words.
-- As a player, I would like to play one/one with other players in the same interface .
-- As a player, I would like to be able to play this game in my phone.
-- As a player who requires assistive technologies, I would like accessibility features so that I'm not left out of enjoying the game.
+- As a player, I would like to see motivational paragraphs that motivate me to continue playing.
+- As a player, I would like the timing to be less strict that way I can have more time to complete more words.
 - As a player I would like to be able to restart the game after a win.
 - As a player, I want the UI to be engaging and out of the way so that I enjoy the experience of playing the game.\*\*
 
 ### Stretch Goals
 
-- As a player, I would like to hear a music in the background that way i can feel i win !
+- As a player, I would like to hear a music in the background to enhance the overall gaming experience!
 - As a player, I would like to be able to pick any text.
 - As a player, I would like to play this game offline.
+- As a player, I would like to play this game in my phone.
 
 ### Notionboard Template
 

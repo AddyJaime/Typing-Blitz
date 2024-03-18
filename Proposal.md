@@ -26,35 +26,38 @@ Link to Figman for layout of proposal : ![https://www.figma.com/file/d4NHfqmfPaq
 - As a player, I would like to play this game offline.
 - As a player, I would like to play this game in my phone.
 
+------------------------------------------------------------------------------------------------------------------------------
+
 **Timeline - Daily Accountability**
 
-MONDAY:
+Monday:
 
 -Create css, js , html files for game.
 
 -Start working with html.
 
-TUESDAY:
+Tuesday:
 
 -Finish html and start adding images to the page.
 
 -Start adding styles.
 
-WEDNESDAY:
+Wednesday:
 
 -Finish styles and layout.
 
 -Start adding functionality.
 
-THURDSDAY:
+Thursday:
 
 -Finish functionality and implement new ones if necessary.
 
 -work on expanding more stretch goals.
 
-FRIDAY:
+Friday:
 
 -look up for possible errors and clean up my code much more .
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Pseudocode  and paragraph use in the game** 
 

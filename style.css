@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 30px;
+
+}
+.InputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.InputBox input {
+  width: 100%;
+  height: 30px;
+}
+
+.btnStartGame {
+  height: 20px;
+  margin-top: 10px; 
+} 
+#btn-StartGame {
+  width: 400px;
+
+}
+#main-game {
+  height: 100vh;
+  display:  none;
+
+}
+
+.playerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  text-transform: capitalize;
+}

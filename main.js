@@ -57,3 +57,73 @@ function handleEvent(event) {
   }
 
 }
+
+// eventlistener that when click and keyup save the name entered in a variable  calld catchPlayerName
+
+btnStartGame.addEventListener('click', handleEvent);
+
+input.addEventListener('keyup', (event) => {
+
+  cacthPlayerName = event.target.value;
+});
+
+btnStartGame.addEventListener('click', function (event) {
+
+})
+
+// variable to start the count from 45sec
+// inverval that get the count to 0
+
+let count = 60;
+let intervalId;
+
+// Function to start or restart the countdown
+function startCountdown() {
+
+  isPlaying = true
+  clearInterval(intervalId); // Clear existing countdown if any
+  
+  intervalId = setInterval(function() {
+    if(startPlaying){
+      
+      count -= 1;
+      countdownH1.innerText = count;
+      if (count === 0) {
+        clearInterval(intervalId);
+      }
+    }
+  }, 1000);
+}
+
+function restartcount(){
+  count = 60;
+  countdownH1.innerText = count; // Reset count to the start value
+  isPlaying = false
+  clearInterval(intervalId);
+}
+
+
+function pauseCountdwon(){
+  clearInterval(intervalId)
+  isPlaying = false
+  
+}
+
+
+// Start playing button
+startPlaying.addEventListener('click', function() {
+  startCountdown();
+  // changeDisplay()
+});
+
+// Restart button
+
+restartBtn.addEventListener('click', function() {
+  restartcount(); 
+  
+  // This function now handles resetting and starting the countdown
+  // changeDisplay();
+});
+
+
+PauseBtn.addEventListener('click', pauseCountdwon)

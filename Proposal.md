@@ -26,31 +26,77 @@ Link to Figman for layout of proposal : ![https://www.figma.com/file/d4NHfqmfPaq
 - As a player, I would like to play this game offline.
 - As a player, I would like to play this game in my phone.
 
-### Notionboard Template
+------------------------------------------------------------------------------------------------------------------------------
 
-Notionboard template for building projects ( You can use this for any project )
+**Timeline - Daily Accountability**
 
-Working on
+Monday:
 
-### Timeline - Daily Accountability
+-Create css, js , html files for game.
 
-Example of a Timeline to keep organized and on task for hitting goals every single day you’re on the sprint for your project.
+-Start working with html.
 
-Create your own table using this markdown table generator website:
+Tuesday:
 
-Working on
+-Finish html and start adding images to the page.
 
-Do not neglect to plan, you will thank yourself later for being proactive!
+-Start adding styles.
 
-| Day |  | Task | Blockers | Notes/ Thoughts |
-| --- | --- | --- | --- | --- |
-| Weekend  |  | Create proposal, config repository and initial files |  |  |
-| Monday |  | Present proposal and start working with html |  |  |
-| Tuesday |  | Add styling |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
+Wednesday:
+
+-Finish styles and layout.
+
+-Start adding functionality.
+
+Thursday:
+
+-Finish functionality and implement new ones if necessary.
+
+-work on expanding more stretch goals.
+
+Friday:
+
+-look up for possible errors and clean up my code much more .
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Pseudocode  and paragraph use in the game** 
+
+ **paragraph 1**
+
+The sun dipped low on the horizon, casting a golden glow across the tranquil lake. Birds chirped their evening songs, and a gentle breeze rustled through the trees. It was a scene of serene beauty, a moment to pause and appreciate the wonders of nature.
+
+ **paragraph 2**
+
+In the heart of the bustling city, amidst the towering skyscrapers and bustling crowds, a small café stood hidden away on a quiet street corner. Inside, the aroma of freshly brewed coffee mingled with the scent of freshly baked pastries, welcoming weary souls seeking solace.
+
+**paragraph 3**
+
+High above the clouds, the airplane soared through the vast expanse of the sky. Passengers peered out of tiny windows, marveling at the patchwork of fields and cities far below. For a moment, time seemed to stand still, suspended in the boundless blue.
+
+**paragraph 4**
+
+Deep in the heart of the forest, a babbling brook wound its way through a grove of ancient trees. Sunlight filtered through the dense canopy, dappling the forest floor with a soft, golden light. It was a place untouched by time, where nature reigned supreme.
+
+**paragraph 5**
+
+At the edge of the cliff, the ocean stretched out to the horizon, its vast expanse shimmering in the sunlight. Waves crashed against the rugged coastline, sending plumes of spray into the air. It was a scene of raw power and untamed beauty.
+
+**paragraph 6**
+
+In the dimly lit library, rows of dusty books lined the shelves, their spines worn with age. The air was heavy with the scent of paper and ink, and the only sound was the soft whisper of pages turning. It was a sanctuary for the curious mind.
+
+**paragraph 7**
+
+Amidst the hustle and bustle of the marketplace, vendors called out to passersby, hawking their wares with gusto. The air was filled with the aroma of spices and exotic foods, and colorful banners fluttered in the breeze. It was a feast for the senses.
+
+**paragraph 8**
+
+As night fell, the city came alive with a symphony of light and sound. Neon signs flickered to life, casting a kaleidoscope of colors onto the crowded streets below. It was a place of endless possibility, where dreams were born and destinies forged.
+
+**paragraph 9**
+
+In the quietude of the countryside, fields of golden wheat swayed in the breeze. The air was filled with the chirping of crickets and the distant call of a lone owl. It was a place of simple beauty, where time moved at its own gentle pace.
+
+**paragraph 10**
+
+Beneath the twinkling stars, a campfire crackled merrily, casting a warm glow over the faces of friends gathered round. They laughed and joked, swapping stories long into the night. It was a moment of camaraderie and friendship, a memory to cherish forever.

@@ -41,3 +41,22 @@ body {
   width: 100%;
   text-transform: capitalize;
 }
+
+.gameboard {
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+  margin: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+}
+
+.footer button {
+  margin: 20px;
+}

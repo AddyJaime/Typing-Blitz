@@ -22,42 +22,36 @@
   </form>
 
   <!-- main page -->
-
-
   <main id="main-game">
-
     <header class="playerBox">
-      <h1 id="player">bhyg</h1>
-      <h1 id="player2">60</h1>
+      <h1 id="player"></h1>
+      <h1 id="player2">30</h1>
     </header>
 
-
-
     <section class="gameboard">
-
-      <textarea placeholder="Start Typing..." name="" id="typing-area" cols="30" rows="10"></textarea>
-
-      <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-
-      <button id="changeText">Change Text</button>
-
+      <!-- <h1>Resulr</h1> -->
+      <div class="textarea-box">
+        <textarea placeholder="Start Typing..." name="" id="typing-area" cols="30" rows="10"></textarea>
+        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+      </div>
     </section>
 
     <footer class="footer">
       <button id="startPlaying">Start Playing</button>
       <button id="restartBtn">Restart Game</button>
-
       <button id="PauseBtn">Pause Game</button>
+      <button id="changeText">Change Text</button>
     </footer>
 
+    <section class="result">
 
+      <h1 id="result"></h1>
+      <h1 id="passed">Passed</h1>
+    </section>
   </main>
 
-
-
-
-  <script src="./main.js"></script>
-
+  <script src="/main.js"></script>
+  <script src="/test.js"></script>
 </body>
 
 </html>

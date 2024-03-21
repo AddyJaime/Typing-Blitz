@@ -2,56 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
-  <title>Document</title>
+	<title>Document</title>
 </head>
 
 <body>
 
-  <!-- welcome page -->
+	<!-- welcome page -->
+	<h1 class="titleOfTyping">Typing Blitz</h1>
 
-  <h1 class="titleOfTyping">Typing Blitz</h1>
+	<form id="formWelcome" class="InputBox">
+		<input class="boxEnterNmae" placeholder="ENTER YOUR NAME" type="text">
+		<button id="btn-StartGame" class="btnStartGame" type="">Start Game</button>
+	</form>
 
-  <form id="formWelcome" class="InputBox">
-    <input class="boxEnterNmae" placeholder="ENTER YOUR NAME" type="text">
-    <button id="btn-StartGame" class="btnStartGame" type="">Start Game</button>
-  </form>
+	<!-- main page -->
+	<main id="main-game">
+		<header class="playerBox">
+			<h1 id="player"></h1>
+			<h1 id="player2">30</h1>
+		</header>
 
-  <!-- main page -->
-  <main id="main-game">
-    <header class="playerBox">
-      <h1 id="player"></h1>
-      <h1 id="player2">30</h1>
-    </header>
+		<section class="gameboard">
+			<!-- <h1>Resulr</h1> -->
+			<div class="textarea-box">
+				<textarea placeholder="Start Typing..." name="" id="typing-area" cols="30" rows="10"></textarea>
+				<textarea name="" id="textarea" cols="30" rows="10"></textarea>
+			</div>
+		</section>
 
-    <section class="gameboard">
-      <!-- <h1>Resulr</h1> -->
-      <div class="textarea-box">
-        <textarea placeholder="Start Typing..." name="" id="typing-area" cols="30" rows="10"></textarea>
-        <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-      </div>
-    </section>
+		<footer class="footer">
+			<button id="startPlaying">Start Playing</button>
+			<button id="restartBtn">Restart Game</button>
+			<button id="PauseBtn">Pause Game</button>
+			<button id="changeText">Change Text</button>
+		</footer>
 
-    <footer class="footer">
-      <button id="startPlaying">Start Playing</button>
-      <button id="restartBtn">Restart Game</button>
-      <button id="PauseBtn">Pause Game</button>
-      <button id="changeText">Change Text</button>
-    </footer>
+		<section class="result">
 
-    <section class="result">
+			<h1 id="result"></h1>
+			<h1 id="passed"></h1>
+		</section>
+	</main>
 
-      <h1 id="result"></h1>
-      <h1 id="passed">Passed</h1>
-    </section>
-  </main>
-
-  <script src="/main.js"></script>
-  <script src="/test.js"></script>
+	<script src="/main.js"></script>
 </body>
 
 </html>

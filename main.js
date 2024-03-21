@@ -102,7 +102,7 @@ btnStartGame.addEventListener('click', function (event) {
 // variable to start the count from 45sec
 // inverval that get the count to 0
 
-let count = 10;
+let count = 30;
 let intervalId;
 
 // Function to start or restart the countdown
@@ -140,7 +140,7 @@ function startCountdown() {
 }
 
 function restartcount() {
-	count = 60;
+	count = 30;
 	countdownH1.innerText = count; // Reset count to the start value
 	isPlaying = false
 	clearInterval(intervalId);

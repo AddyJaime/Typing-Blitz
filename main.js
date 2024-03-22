@@ -33,6 +33,7 @@ let changeText = document.querySelector('#changeText')
 // text area where the text goes 
 let textarea = document.querySelector('#textarea')
 
+let textAreaInstr4uc = document.querySelector('#textAreaInstr4uc')
 
 // variable to cacth playerName
 let cacthPlayerName;
@@ -282,3 +283,5 @@ typingArea.addEventListener('paste', function(event){
 	event.preventDefault();
 })
 
+
+textAreaInstr4uc.disabled = true

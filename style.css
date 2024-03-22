@@ -299,6 +299,19 @@ textarea {
   color: rgb(0, 255, 13);
 }
 
+.GameInstructions {
+  font-size: 15px;
+  background-color: red;
+}
+
+#textAreaInstr4uc {
+  width: 200px;
+  height: 120px;
+  margin-top: 80px;
+  /* margin-right: 170px; */
+  /* background-color: red; */
+}
+
 
 
 @media all and (max-width: 480px) {

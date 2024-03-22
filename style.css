@@ -69,6 +69,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   color: rgba(0, 0, 0, 0.833);
   border: 2px solid rgba(255, 255, 255, 0.22);
+  /* background-color: red; */
 }
 
 
@@ -300,3 +301,40 @@ textarea {
 
 
 
+@media all and (max-width: 480px) {
+
+  .titleOfTyping {
+    font-size: 35px;
+  }
+  
+}
+
+@media all and (min-width: 480px){
+  .titleOfTyping {
+    font-size: 60px;
+  }
+}
+
+
+@media all and (max-width: 320px) {
+  .boxEnterNmae {
+
+    width: 180px;
+    height: 20px;
+  
+}}
+@media all and (min-width: 320px) {
+  .boxEnterNmae {
+
+    width: 180px;
+    height: 20px;
+    margin-top: 50px;
+  
+}}
+
+@media all and (max-width: 480px) {
+  .InputBox {
+    
+   top: 20px;
+  
+}}

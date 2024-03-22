@@ -43,7 +43,7 @@ let isPlaying = false
 
 
 // variable that holds the errors that the player make while typing 
-let errors = 30;
+let errors = 0;
 let paragraphArray;
 let textareaphArray = "";
 
@@ -96,7 +96,7 @@ btnStartGame.addEventListener('click', function (event) {
 // variable to start the count from 45sec
 // inverval that get the count to 0
 
-let count = 30;
+let count = 60;
 let intervalId;
 
 // Function to start or restart the countdown
@@ -130,7 +130,7 @@ function startCountdown() {
 }
 
 function restartcount() {
-	count = 30;
+	count = 60;
 	countdownH1.innerText = count; // Reset count to the start value
 
 	isPlaying = false

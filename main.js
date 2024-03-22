@@ -1,13 +1,8 @@
-
 // welcome page input that holds the input at the begining 
 const result = document.querySelector('#result');
 // const passed = document.querySelector('#passed');
 const input = document.querySelector('input');
 const typingArea = document.querySelector("#typing-area")
-
-
-
-
 
 // welcome page button that holds the start game 
 const btnStartGame = document.querySelector('#btn-StartGame');
@@ -47,9 +42,8 @@ let isPlaying = false
 // function that when click the start game save the the name entered in a variable called cacthPlayerName then the in put and btn start game get display none 
 
 
-
 // variable that holds the errors that the player make while typing 
-let errors = 0
+let errors = 30;
 let paragraphArray;
 let textareaphArray = "";
 
@@ -108,33 +102,29 @@ let intervalId;
 // Function to start or restart the countdown
 function startCountdown() {
 
+
 	isPlaying = true
 	clearInterval(intervalId); // Clear existing countdown if any
 
 	intervalId = setInterval(function () {
 		if (startPlaying && count > 0) {
 			typingArea.disabled = false
+			
 
 			count -= 1;
 			countdownH1.innerText = count;
 
-			
 			if (count <= 0) {
-				
-				// console.log(errors, textareaphArray?.length, paragraphArray?.length);
-				// code must be corrected
 				if (errors === 0 && textareaphArray?.length === paragraphArray?.length) {
-					passed.innerHTML = "Did not passed"
-
+					passed.innerHTML = "Congratulations! You passed!";
 				} else {
-
-					passed.innerHTML = "Did not passed"
+					passed.innerHTML = "Oops! You either made mistakes or ran out of time.";
 				}
-
-				// passed.style.display = "block"
-				typingArea.disabled = true
+				passed.style.display = "block";
+				typingArea.disabled = true;
 				clearInterval(intervalId);
 			}
+
 		}
 	}, 1000);
 }
@@ -142,8 +132,10 @@ function startCountdown() {
 function restartcount() {
 	count = 30;
 	countdownH1.innerText = count; // Reset count to the start value
+
 	isPlaying = false
 	clearInterval(intervalId);
+
 }
 
 
@@ -163,7 +155,11 @@ startPlaying.addEventListener('click', function () {
 // Restart button
 
 restartBtn.addEventListener('click', function () {
+	typingArea.value = "";
 	restartcount();
+	result.innerHTML = "";
+	
+	
 
 	// This function now handles resetting and starting the countdown
 	// changeDisplay();
@@ -205,8 +201,10 @@ const arrayOfparag = [
 
 function getRandomText() {
 	let randomIndex = Math.floor(Math.random() * arrayOfparag.length);
+	textarea.disabled = true;
 	paragraphArray = arrayOfparag[randomIndex].split(" ")
 	return arrayOfparag[randomIndex]
+	
 
 }
 
@@ -217,6 +215,8 @@ function changeDisplay() {
 	// where the randomText is displauy
 	textarea.textContent = ramdomText;
 	textarea.disabled = true;
+	
+
 
 }
 
@@ -238,6 +238,9 @@ typingArea.addEventListener("keyup", (event) => {
 
 	// this is the variable that split the words 
 	textareaphArray = event.target.value.split(" ")
+	
+
+
 
 	// this the cariable of the currentPositicon where the letter is right now 
 	// const currentPosition = event.target.textContent.split(" ").length
@@ -272,3 +275,7 @@ function checkResult() {
 
 }
 
+
+typingArea.addEventListener('paste', function(event){
+	event.preventDefault();
+})

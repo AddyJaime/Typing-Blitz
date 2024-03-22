@@ -305,11 +305,15 @@ textarea {
 }
 
 #textAreaInstr4uc {
-  width: 200px;
+  width: 300px;
   height: 120px;
   margin-top: 80px;
-  /* margin-right: 170px; */
-  /* background-color: red; */
+  background-color: rgba(203, 196, 196, 0.373);
+  font-size: 25px;
+  border: 2px solid white;
+  
+  /* font-weight: bold; */
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 

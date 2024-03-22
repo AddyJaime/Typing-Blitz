@@ -122,6 +122,7 @@ function startCountdown() {
 				}
 				passed.style.display = "block";
 				typingArea.disabled = true;
+				
 				clearInterval(intervalId);
 			}
 
@@ -134,6 +135,7 @@ function restartcount() {
 	countdownH1.innerText = count; // Reset count to the start value
 
 	isPlaying = false
+	passed.innerText = "";
 	clearInterval(intervalId);
 
 }
@@ -279,3 +281,4 @@ function checkResult() {
 typingArea.addEventListener('paste', function(event){
 	event.preventDefault();
 })
+

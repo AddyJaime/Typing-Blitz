@@ -17,14 +17,12 @@ body {
 .titleOfTyping {
   position: absolute;
   top: 43px;
-  /* width: 400px; */
-  /* font-family: s; */
   font-size: 120px;
-  /* background-color: red; */
   color: #333;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.644);
+  box-shadow: 10px 25px 30px 30px rgba(0, 0, 0, 0.858);
 
 
 }
@@ -46,38 +44,49 @@ body {
 }
 
 .InputBox {
-  height: 85%;
+  height: 90%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
+  /* background-color: red; */
 
   border-radius: 100px;
 
 }
 
 .boxEnterNmae {
-  padding: 10px;
-
-  border-radius: 5px;
+ 
+ background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 20px;
   outline: none;
   transition: border-color 0.3s ease;
-  width: 235px;
-  padding: 10px 20px;
+  /* width: 235px; */
+  padding: 30px 40px;
   height: 35px;
-  font-size: 18px;
+  font-size: 69px;
   font-family: 'Times New Roman', Times, serif;
-  color: rgba(0, 0, 0, 0.833);
+  color: white;
   border: 2px solid rgba(255, 255, 255, 0.22);
-  /* background-color: red; */
+  text-align: center;
+ 
 }
+
+
+.boxEnterNmae::placeholder {
+  color: white;
+  text-align: center;
+  /* font-size: 50px; */
+}
+
+
 
 
 
 .btnStartGame {
   width: 150px;
   height: 50px;
-
+  
   margin-top: 20px;
   bottom: 25px;
   border: none;
@@ -85,14 +94,14 @@ body {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .btnStartGame:hover {
-  background-color: rgba(255, 0, 0, 0.532);
+  background-color: rgba(15, 3, 3, 0.532);
   color: #fff;
 }
 
@@ -317,7 +326,7 @@ textarea {
 }
 
 
-
+/* 
 @media all and (max-width: 480px) {
 
   .titleOfTyping {
@@ -332,4 +341,4 @@ textarea {
   }
 }
 
-
+ */

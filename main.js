@@ -35,10 +35,17 @@ let textarea = document.querySelector('#textarea')
 
 let textAreaInstr4uc = document.querySelector('#textAreaInstr4uc')
 
+
+
 // variable to cacth playerName
 let cacthPlayerName;
 
 let isPlaying = false
+let audio;
+
+
+
+
 
 // function that when click the start game save the the name entered in a variable called cacthPlayerName then the in put and btn start game get display none 
 
@@ -90,12 +97,25 @@ input.addEventListener('keyup', (event) => {
 	cacthPlayerName = event.target.value;
 });
 
-btnStartGame.addEventListener('click', function (event) {
+btnStartGame.addEventListener('click' ,function (event) {
 
 })
 
+startPlaying.addEventListener('click',  playmusic)
+
+function playmusic(){
+let audio = new Audio('/audio/LED Style 60 Second Ticking Countdown Timer With Alarm.mp3');
+audio.play()
+}
+
+
 // variable to start the count from 45sec
 // inverval that get the count to 0
+
+function playmusic() {
+	audio = new Audio('/audio/LED Style 60 Second Ticking Countdown Timer With Alarm.mp3');
+	audio.play()
+}
 
 let count = 60;
 let intervalId;
@@ -131,37 +151,49 @@ function startCountdown() {
 	}, 1000);
 }
 
-function restartcount() {
-	count = 60;
-	countdownH1.innerText = count; // Reset count to the start value
-
-	isPlaying = false
-	passed.innerText = "";
-	clearInterval(intervalId);
-
+function stopGameAudio() {
+	if (audio) {
+		audio.pause();
+	}
 }
 
 
+function restartcount() {
+	count = 60;
+	countdownH1.innerText = count; // Reset count to the start value
+	isPlaying = false
+	passed.innerText = "";
+	clearInterval(intervalId);
+	
+	
+}
+
+
+
 function pauseCountdwon() {
+	stopGameAudio()
 	clearInterval(intervalId)
 	isPlaying = false
 	typingArea.disabled = true
+	
 }
 
 
 // Start playing button
 startPlaying.addEventListener('click', function () {
 	startCountdown();
+	
 	// changeDisplay()
 });
 
 // Restart button
 
 restartBtn.addEventListener('click', function () {
+	stopGameAudio();
 	typingArea.value = "";
 	restartcount();
 	result.innerHTML = "";
-	
+
 	
 
 	// This function now handles resetting and starting the countdown
@@ -285,3 +317,4 @@ typingArea.addEventListener('paste', function(event){
 
 
 textAreaInstr4uc.disabled = true
+

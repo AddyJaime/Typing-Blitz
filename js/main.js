@@ -75,7 +75,7 @@ function handleEvent(event) {
 		changeDisplay()
 
 	} else {
-		alert("Name is requiered")
+		
 	}
 
 }

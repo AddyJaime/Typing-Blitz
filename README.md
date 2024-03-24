@@ -26,9 +26,47 @@ Typing Blitz is a skill-testing game designed to measure typing speed and accura
 
 **Screenshots of the welcome page and main page of the game:**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f90f807-75f8-4ef1-8a99-3ff173dc9d4d/b00a84b8-9f04-4228-90f4-feade5be934e/Untitled.jpeg)
+https://www.notion.so/Typing-Blitz-162a83bdad5043c184828cf73b773770?pvs=4#64c49229d5ff4935adc0a92b588b50c1
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2f90f807-75f8-4ef1-8a99-3ff173dc9d4d/4fc01555-510e-4c20-ab92-28b3f80ec89b/Untitled.jpeg)
+https://www.notion.so/Typing-Blitz-162a83bdad5043c184828cf73b773770?pvs=4#8c4682b60e1d4e1ba7c446a4bd4b29f1
+
+
+**Timeline - Daily Accountability**
+
+ **Monday:**
+
+- Develop CSS, JS, and HTML files for the game.
+- Initiate HTML markup and commence CSS styling.
+
+**Tuesday:**
+
+- Complete HTML markup and integrate images into the game.
+- Begin refining styles to enhance visual appeal.
+
+**Wednesday:**
+
+- Finalize styling and layout to ensure a polished user interface.
+- Initiate implementation of game functionality.
+
+**Thursday:**
+
+- Complete functional implementation and iterate for improvements as needed.
+- Explore additional features to enhance gameplay experience, focusing on stretch goals.
+
+**Friday:**
+
+- Conduct thorough code review to identify and rectify any potential errors.
+- Optimize and refactor code for improved readability and maintainability.
+----------------------------------------------------------------------------------------------
+
+Future Enhancements
+
+1. Utilize AI for adaptive difficulty and personalized gameplay.
+2. Optimize mobile interface for intuitive controls and responsiveness.
+3. Enhance welcome button with clear CTA and feedback animation.
+4. Polish visuals and optimize performance for professional mobile integration.
+5. Implement social features and cross-platform compatibility.
+6. Deliver a seamless and engaging two-person gaming experience.
 
 **Attributions:**
 

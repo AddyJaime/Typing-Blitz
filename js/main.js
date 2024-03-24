@@ -1,12 +1,14 @@
 // welcome page input that holds the input at the begining 
+
 const result = document.querySelector('#result');
+
 // const passed = document.querySelector('#passed');
 const input = document.querySelector('input');
+
 const typingArea = document.querySelector("#typing-area")
 
 // welcome page button that holds the start game 
 const btnStartGame = document.querySelector('#btn-StartGame');
-
 
 // tittle that holds the h1 for playerName
 const playerh1 = document.querySelector('#player');
@@ -37,37 +39,28 @@ let textAreaInstr4uc = document.querySelector('#textAreaInstr4uc')
 
 
 
-// variable to cacth playerName
+// Global variables 
 let cacthPlayerName;
-
-let isPlaying = false
+let isPlaying = false;
 let audio;
-
-
-
-
-
-// function that when click the start game save the the name entered in a variable called cacthPlayerName then the in put and btn start game get display none 
-
-
-// variable that holds the errors that the player make while typing 
 let errors = 0;
 let paragraphArray;
 let textareaphArray = "";
-
-
-typingArea.disabled = true
-result.style.display = "none"
-passed.style.display = "none"
+typingArea.disabled = true;
+result.style.display = "none";
+passed.style.display = "none";
+let count = 60;
+let intervalId;
 
 
 // this is the variable that split the words 
 textareaphArray = typingArea.value.split(" ")
 
 
+// function that when enter name in my welcome page hid the welcome page and take you to my main page
+
 function handleEvent(event) {
 
-	// cacthPlayerName check if there is a value
 	if (cacthPlayerName) {
 		event.preventDefault()
 
@@ -77,7 +70,7 @@ function handleEvent(event) {
 
 		mainGame.style.display = 'block';
 
-		// everthing that you put in the input will be save here and post it on the screeen 
+
 		playerh1.innerText = cacthPlayerName
 		changeDisplay()
 
@@ -87,9 +80,6 @@ function handleEvent(event) {
 
 }
 
-
-// eventlistener that when click and keyup save the name entered in a variable  calld catchPlayerName
-
 btnStartGame.addEventListener('click', handleEvent);
 
 input.addEventListener('keyup', (event) => {
@@ -97,30 +87,29 @@ input.addEventListener('keyup', (event) => {
 	cacthPlayerName = event.target.value;
 });
 
-btnStartGame.addEventListener('click' ,function (event) {
+btnStartGame.addEventListener('click', function (event) {
 
 })
 
-startPlaying.addEventListener('click',  playmusic)
-
-function playmusic(){
-let audio = new Audio('/audio/LED Style 60 Second Ticking Countdown Timer With Alarm.mp3');
-audio.play()
-}
+startPlaying.addEventListener('click', playmusic)
 
 
-// variable to start the count from 45sec
-// inverval that get the count to 0
+// function that starts the music when click start playing, restart and pause
 
 function playmusic() {
 	audio = new Audio('/audio/LED Style 60 Second Ticking Countdown Timer With Alarm.mp3');
 	audio.play()
 }
 
-let count = 60;
-let intervalId;
+// function to stop the audio
 
-// Function to start or restart the countdown
+function stopGameAudio() {
+	if (audio) {
+		audio.pause();
+	}
+}
+
+// Function to start the countdown
 function startCountdown() {
 
 
@@ -130,7 +119,7 @@ function startCountdown() {
 	intervalId = setInterval(function () {
 		if (startPlaying && count > 0) {
 			typingArea.disabled = false
-			
+
 
 			count -= 1;
 			countdownH1.innerText = count;
@@ -143,7 +132,7 @@ function startCountdown() {
 				}
 				passed.style.display = "block";
 				typingArea.disabled = true;
-				
+
 				clearInterval(intervalId);
 			}
 
@@ -151,56 +140,48 @@ function startCountdown() {
 	}, 1000);
 }
 
-function stopGameAudio() {
-	if (audio) {
-		audio.pause();
-	}
-}
-
-
+// function to restart countdown
 function restartcount() {
 	count = 60;
 	countdownH1.innerText = count; // Reset count to the start value
 	isPlaying = false
 	passed.innerText = "";
 	clearInterval(intervalId);
-	
-	
+
+
 }
 
-
-
+// function to pause 
 function pauseCountdwon() {
 	stopGameAudio()
 	clearInterval(intervalId)
 	isPlaying = false
 	typingArea.disabled = true
-	
+
 }
 
 
 // Start playing button
 startPlaying.addEventListener('click', function () {
 	startCountdown();
-	
+
 	// changeDisplay()
 });
 
 // Restart button
-
 restartBtn.addEventListener('click', function () {
 	stopGameAudio();
 	typingArea.value = "";
 	restartcount();
 	result.innerHTML = "";
 
-	
+
 
 	// This function now handles resetting and starting the countdown
 	// changeDisplay();
 });
 
-
+// 	Pause button
 PauseBtn.addEventListener('click', pauseCountdwon)
 
 
@@ -239,7 +220,7 @@ function getRandomText() {
 	textarea.disabled = true;
 	paragraphArray = arrayOfparag[randomIndex].split(" ")
 	return arrayOfparag[randomIndex]
-	
+
 
 }
 
@@ -250,7 +231,7 @@ function changeDisplay() {
 	// where the randomText is displauy
 	textarea.textContent = ramdomText;
 	textarea.disabled = true;
-	
+
 
 
 }
@@ -258,13 +239,7 @@ function changeDisplay() {
 changeText.addEventListener('click', changeDisplay)
 
 
-
-
-
-
-
-
-// here an event is added to the typing area that way everytieme the player types somthing, an key is activated 
+// here an event is added to the typing area that way everytime the player types something, a key is activated 
 
 typingArea.addEventListener("keyup", (event) => {
 
@@ -273,7 +248,7 @@ typingArea.addEventListener("keyup", (event) => {
 
 	// this is the variable that split the words 
 	textareaphArray = event.target.value.split(" ")
-	
+
 
 
 
@@ -286,6 +261,7 @@ typingArea.addEventListener("keyup", (event) => {
 
 })
 
+// Check error function
 
 function checkErrors() {
 	const tempTextAreaArray = textareaphArray.join(" ").trim().split(" ")
@@ -302,6 +278,7 @@ function checkErrors() {
 	result.innerHTML = `<span class="red">Errors : ${errors}</span>,  <span class="green">${textareaphArray.length} written words of ${paragraphArray.length}</span>`
 }
 
+// Check result 
 function checkResult() {
 	if (textareaphArray.length === paragraphArray.length) {
 		console.log(`Total errors: ${errors > 0 ? errors / paragraphArray.length : paragraphArray.length}`)
@@ -311,7 +288,8 @@ function checkResult() {
 }
 
 
-typingArea.addEventListener('paste', function(event){
+// Prevent text from bring copied 
+typingArea.addEventListener('paste', function (event) {
 	event.preventDefault();
 })
 

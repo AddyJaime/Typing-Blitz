@@ -14,9 +14,10 @@ Typing Blitz is a skill-testing game designed to measure typing speed and accura
 
 1. Fork and clone this repository onto your local machine by executing the following command in your terminal:
     
-    ```bash
-    bashCopy code
+    ```zsh
+    ZshCopy code
     git clone https://github.com/AddyJaime/Typing-Blitz.git
+    Front-end deployment link https://typing-blitz-addyjaime.netlify.app/
     
     ```
     
